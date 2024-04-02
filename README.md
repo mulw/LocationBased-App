@@ -15,19 +15,10 @@ Before you begin, ensure you have met the following requirements:
     PostgreSQL and PostGIS Database along with Docker
 
 For detailed installation instructions, please refer to the GeoDjango documentation.
-Installation
+Maps with Django, GeoDjango, PostGIS & Leaflet
+creating a web map with the Python-based web framework Django using its module GeoDjango, the PostgreSQL database with its spatial extension PostGIS and Leaflet, a JavaScript library for interactive maps would involve the following.
 
-To install Location-Based Web Application, follow these steps:
-Maps with Django⁽²⁾: GeoDjango, PostGIS & Leaflet
-
-A quickstart guide to create a web map with the Python-based web framework Django using its module GeoDjango, the PostgreSQL database with its spatial extension PostGIS and Leaflet, a JavaScript library for interactive maps.
-© 2020 Paolo Melchiorre “Photo at the sunrise of Bivacco Fusco trail sign in Abruzzo, Italy”
-© 2020 Paolo Melchiorre “Photo at the sunrise of Bivacco Fusco trail sign in Abruzzo, Italy”
-Maps with Django (2 part series)
-
-    Maps with Django⁽¹⁾: GeoDjango, SpatiaLite & Leaflet
-    Maps with Django⁽²⁾: GeoDjango, PostGIS & Leaflet
-
+   
 Contents
 
     Abstract
@@ -54,9 +45,9 @@ A map in a website is the best way to make geographic data easily accessible to 
 
 Implementing a web map can be complex and many adopt the strategy of using external services, but in most cases, this strategy turns out to be a major data and cost management problem.
 
-In this guide we’ll see how to create a web map with the Python-based web framework Django using its GeoDjango module, storing geographic data in your relational database on which to run geospatial queries.
+we’ll see how to create a web map with the Python-based web framework Django using its GeoDjango module, storing geographic data in your relational database on which to run geospatial queries.
 
-Through this article, you can learn how to add on your website a complex and interactive web map based on this software:
+Through this ,you can learn how to add on your website a complex and interactive web map based on this software:
 
     GeoDjango, the Django geographic module
     PostGIS, the PostgreSQL spatial extension
@@ -754,22 +745,3 @@ $ python3 -m manage runserver
 
 Now that the server’s running, visit http://127.0.0.1:8000/markers/map/ with your Web browser. You’ll see the “Markers map” page, with a full-page map and all the markers. It worked!
 An animated map with mountain peaks and spot elevation locations from the free Natural Earth geography map dataset.
-An animated map with mountain peaks and spot elevation locations from the free Natural Earth geography map dataset.
-Curiosity
-
-If you want to know more about my latest hike to the Monte Amaro peak you can see it on my Wikiloc account: Round trip hike from Rifugio Pomilio to Monte Amaro 🔗.
-Conclusion
-
-We have shown an example of a fully functional map, trying to use the least amount of software, without using external services.
-
-This is an advanced map and it uses only GeoDjango, PostGIS and Leaflet to render very large numbers of markers in a fluid and dynamic way.
-
-In future articles we will see how to add many other features:
-
-    shapefile loading to Django models
-    markers and popups customization to show additional information
-    marker filtering based on relation data
-    clustering of the markers to make the loading of data more efficient
-    use of Geocoding services to add marker locations starting from the address
-
-Stay tuned.
